@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
+ 
+<title>Spolylang</title>
+
+
+</head>
+
+<body>
+
+<div id="status_bar_bg"></div>
+<div id="bg"></div>
+
+<!-- ****************************** -->
+<!-- Main view -->
+<!-- ****************************** -->
+<div class="view" id="main">
+
+    <div class="language_selection_first"><p class="translate">Choose your language</p>
+    <select>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="el">Ελληνικά</option>
+        <option value="pl">Polski</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+    </select>
+    </div>
+
+  	<span class="navigationIcon fa fa-bars"></span> 
+
+    <div id="messages"><!--msg placeholder--></div> 
+    
+    <div id="timer2"><div id="timerScale"></div></div>
+    <div id="stars"></div> 
+    <div id="gameScore" class="hide">Score:<br><span id="scoreValue"></span></div>
+    <div id="modal">
+    
+        <div id="modalContent">
+        <p class="translate">Start</p>
+        <p class="translate hide">Try again</p>
+        </div>
+    </div>
+    <div id="question_placeholder">
+    
+        <!-- question placeholder -->
+    
+    </div>
+   
+
+</div>
+
+<!-- ****************************** -->
+<!-- Menu view -->
+<!-- ****************************** -->
+<div class="view" id="menuView">
+
+   <span class="navigationIcon fa fa-times"></span> 
+   
+   <ul>
+   
+       <li class="translate" link="collections">Collections</li>
+       <li class="translate" link="statistics">Statistics</li>
+       <li class="translate" link="options">Options</li>
+       <li class="translate" link="about">About</li>
+          
+   </ul>
+    
+
+</div>
+
+<!-- ****************************** -->
+<!-- Options view -->
+<!-- ****************************** -->
+<div class="view" id="options">
+
+  <!-- <span class="navigationIcon fa fa-times x_btn"></span> -->
+  
+  <div class="viewContent">
+      <p class="settings_icon translate">Options</p>
+      
+      <div class="selector" description="I know" basket="languages" option="languageA"></div>
+      <div class="selector" description="I would like to learn" basket="languages" option="languageB"></div>
+
+      <div id="submit" class="translate">Save and go back</div>
+  
+  
+  </div>
+    
+
+</div>
+
+
+
+<!-- ****************************** -->
+<!-- Statistics view -->
+<!-- ****************************** -->
+<div class="view" id="statistics">
+
+  <span class="navigationIcon fa fa-times"></span>
+  <div class="viewContent">
+    <p class="stats_icon translate">Stats</p>
+
+    <p class="perf translate">Your performance / Last 10 attempts</p>
+    <div class="stats_screen"></div>
+
+  </div>  
+ 
+</div>
+
+<!-- ****************************** -->
+<!-- Collections view -->
+<!-- ****************************** -->
+<div class="view" id="collections">
+
+  <span class="navigationIcon fa fa-times"></span>
+  <div class="viewContent">
+    <p class="collections_icon translate">Collections</p>
+    <p class="perf translate">Trophies collected</p>
+    <p class="highScore"><span class="translate">High Score:</span> <span class="h_s"></span></p>
+    
+    <div id="trophies"> 
+      <p class="magical_script"></p>
+      <p class="medal50"></p>
+      <p class="feather"></p>
+      <p class="medal100"></p>
+      <p class="diamond"></p>
+      <p class="crown"></p>
+    </div>
+  
+  </div>  
+ 
+</div>
+
+
+<!-- ****************************** -->
+<!-- About view -->
+<!-- ****************************** -->
+<div class="view" id="about">
+
+  <span class="navigationIcon fa fa-times"></span>
+  <div class="viewContent">
+    <p class="spolylang_logo"> Spolylang<sup>&reg;</sup></p>
+
+    <blockquote>
+
+    <p class="translate">The easiest way to boost your vocabulary is here!</p>
+    <p class="translate">We have introduced 7 different languages that are 
+       easily updatable.</p>
+    </br>  
+    <p class="translate">Simply choose your native language and navigate to the language which you would like
+        to learn.</p>
+
+</blockquote>
+
+  
+  </div>  
+ 
+</div>
+
+</body>
+
+<link rel="stylesheet" href="css/style.css" />
+<script src="app.min.js" type="text/javascript"></script>
+
+
+</html>

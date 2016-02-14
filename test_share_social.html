@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>share test</title>
+
+	<script type="text/javascript">
+	window.onload = function(){
+
+
+		//twitter
+		function tweetscore(){
+	        //share score on twitter
+	        var tweetbegin = 'http://twitter.com/home?status=';
+	        var tweetnumber = document.getElementById('tweetscore').innerHTML;
+	        // var tweettxt = 'I scored '+tweetnumber+' at this game -' + window.location.href + '.';
+	        var tweettxt = 'I scored ' + tweetnumber + ' at SpolyLang!' + ' ' + 'http://www.spolylang.com';
+	        var finaltweet = tweetbegin +encodeURIComponent(tweettxt);
+	        window.open(finaltweet,'_blank');
+    	}
+
+    	function facebookscore(){
+	        
+		  FB.ui(
+			  {
+			    method: 'share',
+			    href: 'https://developers.facebook.com/docs/',
+			  },
+			  // callback
+			  function(response) {
+			    if (response && !response.error_message) {
+			      alert('Posting completed.');
+			    } else {
+			      alert('Error while posting.');
+			    }
+			  }
+			);
+
+
+    	}
+
+    var a = document.getElementById('tweetscore_btn'),
+    	b = document.getElementById('tweetscore')
+
+    	a.addEventListener('click', function(){
+
+    		facebookscore()
+
+    	}, false)
+
+};
+	</script>
+</head>
+<body>
+
+<p id="tweetscore_btn">Share score on twitter: <span id="tweetscore">100</span></p>
+
+
+</body>
+</html>
